@@ -72,20 +72,19 @@ Next we need to define our API end points - we need to be able to perform basic 
  - `GET    /user/:id` - fetch a single user
  - `PUT    /user/:id` - update user
  - `DELETE /user/:id` - delete user
-### Groups
+### Groups (One Switch and N Lights per Group. Need to add code to limit Switch to one. M Groups per User)
  - `GET    /groups`   - fetch all groups
  - `POST   /group`     - create a new group
  - `GET    /group/:id` - fetch a single group
  - `PUT    /group/:id` - update group
  - `DELETE /group/:id` - delete group
-### Units
+### Units (Lights and Switches)
  - `GET    /units`    - fetch all units
  - `POST   /unit`     - create a new unit
  - `GET    /unit/:id` - fetch a single unit
  - `PUT    /unit/:id` - update unit
  - `DELETE /unit/:id` - delete unit
  - `GET    /units/group/:id` - fetch all units from a single group
-All is set, now we can go ahead and start setting up our api routes. First up we'll create a users route, every unit created will require a user.
 **/
 
 router.route('/users')
