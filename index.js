@@ -16,6 +16,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var _ = require('lodash');
 
+app.use(require("morgan")("dev"));
 
 
 
