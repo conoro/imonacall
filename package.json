@@ -4,7 +4,9 @@
   "description": "Hub server for all Im On A Call Switches and Lights",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "esp8266"
@@ -21,6 +23,8 @@
     "morgan": "^1.6.1",
     "mysql": "^2.9.0",
     "sqlite3": "^3.1.0",
-    "when": "^3.7.3"
-  }
+    "when": "^3.7.3",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
